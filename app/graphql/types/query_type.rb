@@ -1,11 +1,9 @@
 Types::QueryType = GraphQL::ObjectType.define do
   name "Query"
 
-  # queries are just represented as fields
+  # queries are represented as fields
   field :allLinks, !types[Types::LinkType] do
-    # resolve would be called in order to fetch data for that field
-    resolve ->(obj, args, ctx) {
-      Link.all
-    }
+    # resolve is called to fetch the field's data
+    resolve ->(obj, args, ctx) { Link.all }
   end
 end
