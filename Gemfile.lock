@@ -166,8 +166,8 @@ DEPENDENCIES
   bcrypt (~> 3.1.11)
   byebug
   coffee-rails (~> 4.2)
-  graphiql-rails
-  graphql
+  graphiql-rails (~> 1.4.5)
+  graphql (~> 1.7.4)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (~> 0.18)
